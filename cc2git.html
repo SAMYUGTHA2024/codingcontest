@@ -5,6 +5,8 @@
         <p>
             read mainstring
              read substring
+             start_index=$(awk -v a="$mainstring" -v b="$substring" 'BEGIN{print index(a,b)}')
+             echo "$start_index"
         </p>
     </body>
 </html>
